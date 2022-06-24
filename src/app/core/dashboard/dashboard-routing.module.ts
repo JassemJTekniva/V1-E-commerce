@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
     loadChildren: () =>
       import('./stock/stock.module').then((m) => m.StockModule),
   },
+  {
+    path:'account',component:UserProfileComponent
+  }
 ];
 
 @NgModule({

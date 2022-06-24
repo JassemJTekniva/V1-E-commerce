@@ -39,7 +39,7 @@
       </button>
       <mat-menu #userMenu="matMenu" xPosition="before" yPosition="above" [overlapTrigger]="false">
   
-        <a mat-menu-item [routerLink]="['auth/account']">
+        <a mat-menu-item [routerLink]="['dashboard/account']">
           <mat-icon>person</mat-icon>
           <span>Account</span>
         </a>
@@ -143,7 +143,7 @@
               
               <a mat-list-item [routerLink]="['/dashboard/document/purchase']" routerLinkActive="active">
                 <mat-icon mat-list-icon>
-                  inventory
+                  add_shopping_cart
                 </mat-icon>
                 <p mat-line> Purchase </p>
               </a>
